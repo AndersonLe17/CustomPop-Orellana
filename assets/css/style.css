@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+/* General */
+html {
+  height: 100%;
+  width: 100%;
+}
+/* Header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px 15px 40px;
+  display: flex;
+  object-fit: cover;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+main {
+  background: url(../img/back_section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header .logo{
+  width: 5vmax;
+  cursor: pointer;
+}
+
+nav div .logo {
+  width: 4vmax;
+  cursor: pointer;
+}
+
+nav ul,
+.second_nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li,
+.second_nav ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+nav ul li a,
+.second_nav ul li a{
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav_active a{
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px white;
+  -webkit-text-stroke: 0px white;
+}
+
+.nav_active a:hover{
+  color: white;
+}
+
+nav ul li a:hover{
+  color: #FCC714;
+}
+/* Footer */
+.nav-footer {
+  padding: 0;
+  font-family: "Press Start 2P", cursive;
+  font-size: 13px;
+}
+
+.nav-footer li {
+  text-align: center;
+}
+
+.nav-footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-footer li a:hover {
+  text-decoration: underline;
+}
+
+.social-links div a {
+  color: white;
+}
+
+.end-footer {
+  background: #111;
+}
+.end-footer small{
+  color: #FCC714;
+}
+
+/* Index */
+.sec-banner{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 85vh;
+}
+
+.sec-banner::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to top, #111111, transparent);
+  z-index: 10;
+}
+
+.sec-banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.sec-banner #slogan {
+  font-family: 'Indie Flower', cursive;
+  position: absolute;
+  color: #FCC714;
+  text-shadow: 0px 0px 7px#111111;
+  font-size: 3.75vmax;
+  text-align: center;
+  line-height: 0.8em;
+  white-space: nowrap;
+  transform: translateY(-100px);
+}
+
+.sec-banner #ban_btn {
+  font-family: "Press Start 2P", cursive;
+  position: absolute;
+  text-decoration: none;
+  display: inline-block;
+  background: #111111;
+  box-shadow: 0px 0px 7px #111111;
+  color: #fff;
+  padding: 8px 30px;
+  border-radius: 20px;
+  font-size: 0.95em;
+  transition: ease 1s;
+}
+
+.sec-banner #ban_btn:hover {
+  background: #fff;
+  color: #111;
+}
+
+.h_welcome {
+  height: 15vh;
+  background: #111111;
+  text-align: center;
+}
+
+.h_welcome h1 {
+  font-family: 'Indie Flower', cursive;
+  color: #FCC714;
+  font-weight: bold;
+}
+
+.h_welcome p {
+  font-family: 'Indie Flower', cursive;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  word-spacing: 0.5rem;
+}
+
+.sec-bienvenida {
+  min-height: 50vh;
+  font-family: 'Indie Flower', cursive;
+}
+
+.sec-bienvenida div h4{
+  font-size: 4.75vh;
+}
+
+.sec-bienvenida div h3{
+  font-size: 4.85vh;
+}
+
+.sec-info {
+  min-height: 50vh;
+  font-family: 'Indie Flower', cursive;
+}
+
+.sec-info .row {
+  min-height: 50vh;
+}
+
+.sec-info .row .col-lg-6:first-child {
+  font-size: 3.75vh;
+  padding-left: 15%;
+}
+
+.sec-info .row .col-lg-6:nth-child(2) {
+  font-size: 1.5rem;
+  padding-right: 15%;
+}
+
+.sec-info .row .col-lg-6:nth-child(2) a {
+  font-size: 1.15rem;
+}
+
+.sec-video {
+  min-height: 50vh;
+}
+
+.sec-video .row .col-lg-6 iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.sec-video .row .col-6 .card {
+  width:20rem;
+}
+
+.sec-video .row .col-6 .card .product {
+  width: 100%;
+}
+
+.btn-item {
+  font-family: "JetBrains Mono", monospace;
+  border: 0;
+  background: #FCC714;
+  color: #414141;
+  transition: ease 1s;
+}
+
+.btn-item:hover {
+  background: #414141;
+  color: #fff;
+}
+
+/* Fin Index */
+/* Contacto */
+.sec-contact {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.form-header h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 6.25vh;
+  font-weight: bold;
+}
+
+.form-header p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.65vh;
+}
+
+.i-contact a {
+  font-size: 1.75rem;
+  color: black;
+}
+
+.i-contact p {
+  font-size: 1.35rem;
+  font-family: 'Indie Flower', cursive;
+}
+/* Fin Contacto */
+/* Empresa */
+.sec-empresa {
+  font-family: 'Indie Flower', cursive;
+}
+
+.sec-empresa div h1 {
+  font-size: 6.25vh;
+  font-weight: bold;
+}
+
+.empresa-info div img {
+  width: 100%;
+}
+
+.empresa-info div p {
+  font-size: 2.45vh;
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* Fin Empresa */
+/* Productos */
+.sec-title-pro {
+  font-family: 'Indie Flower', cursive;
+}
+
+.sec-title-pro div h1 {
+  font-size: 3.25rem;
+  font-weight: bold;
+}
+
+.sec-products {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.list-products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1.75rem;
+  column-gap: 1.75rem;
+}
+
+.item-p {
+  padding: 0.5rem;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.item-p .img-p img{
+  width: 100%;
+}
+
+.item-p .item-desc {
+  text-align: center;
+  height: 8.5rem;
+}
+
+.desc-p .title-p {
+  font-size: 1.05rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.price-p {
+  margin-bottom: 0.25rem;
+  font-weight: bolder;
+  font-size: 1.15rem;
+}
+.price-p small {
+  font-size: 0.85rem;
+}
+
+.btn-p {
+  background: #fff;
+  border-color: #111;
+  font-size: 0.95rem;
+  width: 80%;
+  transition: ease 0.75s;
+}
+
+.btn-p:hover {
+  background: #111;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  /* Index_Mobile */
+  .sec-banner #slogan {
+    font-size: 4.75vh;
+  }
+  .h_welcome h1{
+    font-size: 3.75vh;
+  }
+  .h_welcome p{
+    font-size: 3vh;
+  }
+  .sec-bienvenida div h4{
+    font-size: 3.75vh;
+  }
+  .sec-bienvenida div h3{
+    font-size: 3.85vh;
+  }
+  .sec-info .row .col-lg-6 {
+    padding-right: 0% !important;
+    padding-left: 0% !important;
+  }
+  .sec-video .row{
+    min-height: 35vh;
+  }
+  /* Header_Mobile */
+  header .logo,
+  .navbar div .logo{
+    width: 8.5vmax;
+  }
+  header .menulist{
+    opacity: 0;
+  }
+  nav ul,
+  .second_nav ul{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav.active ul{
+    position: absolute;
+    padding: 15px 0;
+    top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    right: 40px;
+    width: 300px;
+    opacity: 1;
+    visibility: visible;
+    background: #0000009c;
+  }
+  nav.active ul li{
+    text-align: center;
+    width: 100%;
+  }
+  header .menu,
+  nav div .menu{
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2.25rem;
+    color: white;
+  }
+  /* Contacto_Mobile */
+  .form-header h1 {
+    font-size: 5.5vh;
+  }
+  .form-header p {
+    font-size: 2.65vh;
+  }
+  .form-contact{
+    font-size: 0.85rem;
+  }
+  .form-contact .input-group input{
+    font-size: 0.75rem;
+  }
+  .input-group-text{
+    font-size: 0.75rem !important;
+  }
+  /* Empresa_Mobile */
+  .empresa-info div p {
+    text-align: center;
+  }
+  /* Productos */
+  .list-products {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .list-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .list-products {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0;
+  }
+}
