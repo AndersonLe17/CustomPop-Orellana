@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 /* General */
 html {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 /* Header */
 header {
@@ -78,6 +78,10 @@ nav ul li a:hover{
   font-size: 13px;
 }
 
+.text-reeds {
+  font-family: 'Indie Flower', cursive;
+}
+
 .nav-footer li {
   text-align: center;
 }
@@ -99,7 +103,7 @@ nav ul li a:hover{
   background: #111;
 }
 .end-footer small{
-  color: #FCC714;
+  color: #fff;
 }
 
 /* Index */
@@ -330,6 +334,10 @@ nav ul li a:hover{
   width: 100%;
 }
 
+[class*=" imghvr-"] figcaption, [class*=" imghvr-"]{
+  background-color: #fff !important;
+}
+
 .item-p .item-desc {
   text-align: center;
   height: 8.5rem;
@@ -412,6 +420,7 @@ nav ul li a:hover{
     opacity: 1;
     visibility: visible;
     background: #0000009c;
+    z-index: 10;
   }
   nav.active ul li{
     text-align: center;

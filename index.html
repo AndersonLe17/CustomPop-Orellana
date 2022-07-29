@@ -20,6 +20,10 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css" rel="stylesheet"
         type="text/css">
@@ -71,49 +75,49 @@
     <!-- Main -->
     <main>
         <section class="container sec-bienvenida">
-            <div class="py-4 text-center">
+            <div class="py-4 text-center" data-aos="fade-up">
                 <h4 class="py-2">¡Te damos la bienvenida!</h4>
                 <h3 class="py-2 fw-bold">Alguno de nuestros trabajos</h3>
             </div>
             <div class="row pb-4">
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme" id="grouped-images" data-aos="zoom-in-up">
                     <div class="item">
-                        <div class="card border-0">
+                        <div class="card border-0" href="./assets/img/custom/funko1.jpg">
                             <img src="./assets/img/custom/funko1.jpg" class="img-thumbnail" alt="funko">
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0">
+                        <div class="card border-0" href="./assets/img/custom/funko2.jpg">
                             <img src="./assets/img/custom/funko2.jpg" class="img-thumbnail" alt="funko">
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0">
+                        <div class="card border-0" href="./assets/img/custom/funko3.jpg">
                             <img src="./assets/img/custom/funko3.jpg" class="img-thumbnail" alt="funko">
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0">
+                        <div class="card border-0" href="./assets/img/custom/funko4.jpg">
                             <img src="./assets/img/custom/funko4.jpg" class="img-thumbnail" alt="funko">
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0">
+                        <div class="card border-0" href="./assets/img/custom/funko5.jpg">
                             <img src="./assets/img/custom/funko5.jpg" class="img-thumbnail" alt="funko">
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0">
+                        <div class="card border-0" href="./assets/img/custom/funko6.jpg">
                             <img src="./assets/img/custom/funko6.jpg" class="img-thumbnail" alt="funko">
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0">
+                        <div class="card border-0" href="./assets/img/custom/funko7.jpg">
                             <img src="./assets/img/custom/funko7.jpg" class="img-thumbnail" alt="funko">
                         </div>
                     </div>
                     <div class="item">
-                        <div class="card border-0">
+                        <div class="card border-0" href="./assets/img/custom/funko8.jpg">
                             <img src="./assets/img/custom/funko8.jpg" class="img-thumbnail" alt="funko">
                         </div>
                     </div>
@@ -123,7 +127,7 @@
 
         <section class="container sec-info container">
             <div class="row">
-                <div class="col-12 col-lg-6 my-auto text-center text-lg-start">
+                <div class="col-12 col-lg-6 my-auto text-center text-lg-start" data-aos="fade-up">
                     <p>Nuestros clientes <strong>nos brindan
                             la inspiración</strong> para poder
                         diseñar <strong>figuras
@@ -131,7 +135,7 @@
                         convertimos en <strong>Funko Pop's
                         </strong> personalizados a la medida.</p>
                 </div>
-                <div class="col-12 col-lg-6 my-auto text-center text-lg-start">
+                <div class="col-12 col-lg-6 my-auto text-center text-lg-start" data-aos="fade-up">
                     <p>En base a este esquema es como nuestra
                         organización se ha ido formando,
                         brindando nuestro servicios a las personas
@@ -145,13 +149,13 @@
 
         <section class="container sec-video py-5">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6" data-aos="flip-left">
                     <iframe src="https://www.youtube.com/embed/wGKzfqB-6C4"
                         title="Cómo Hacer Tu Propio FUNKO POP | Mis Mejores Ideas | Custom Funko Pop" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="d-none d-lg-flex col-6 justify-content-center">
+                <div class="d-none d-lg-flex col-6 justify-content-center" data-aos="flip-right">
                     <div class="card border border-0">
                         <img src="./assets/img/Funko-Pop-DIY.png" class="card-img-top product" alt="Funko DIY">
                         <button class="btn-item">¡Comprar!</button>
@@ -161,39 +165,44 @@
         </section>
 
     </main>
-    <footer class="pt-4 bg-dark">
-        <div class="text-center">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/CustomPop_ico.png" alt="logo_custompop" width="100">
-            </a>
-        </div>
-        <div class="container py-4">
+
+
+    <footer class="bg-dark pt-5">
+        <div class="container py-3" data-aos="zoom-in">
             <ul class="row nav-footer">
-                <li class="col-12 col-md">
-                    <a href="../index.html">INICIO</a>
+                <li class="col-12 col-md py-1">
+                    <a href="./index.html">INICIO</a>
                 </li>
-                <li class="col-12 col-md">
-                    <a href="./nosotros.html">NOSOTROS</a>
+                <li class="col-12 col-md py-1">
+                    <a href="./pages/nosotros.html">NOSOTROS</a>
                 </li>
-                <li class="col-12 col-md">
-                    <a href="./productos.html">PRODUCTOS</a>
+                <li class="col-12 col-md py-1">
+                    <a href="./pages/productos.html">PRODUCTOS</a>
                 </li>
-                <li class="col-12 col-md">
-                    <a href="./equipo.html">EQUIPO</a>
+                <li class="col-12 col-md py-1">
+                    <a href="./pages/equipo.html">EQUIPO</a>
                 </li>
-                <li class="col-12 col-md">
-                    <a href="./contacto.html">CONTACTO</a>
+                <li class="col-12 col-md py-1">
+                    <a href="./pages/contacto.html">CONTACTO</a>
                 </li>
             </ul>
         </div>
-        <div class="w-100 social-links h2 text-center row justify-content-center pb-3">
-            <div class="col-1">
+        <div class="text-center py-3">
+            <div class="mb-4">
+                <img src="assets/img/CustomPop_ico.png" alt="logo_custompop" width="100">
+            </div>
+            <div class="text-white text-reeds fw-bold fs-5">
+                <p>Nuestras Redes:</p>
+            </div>
+        </div>
+        <div class="w-100 social-links h1 text-center row justify-content-center m-0 pb-4">
+            <div class="col-2 col-lg-1">
                 <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square"></i></a>
             </div>
-            <div class="col-1">
+            <div class="col-2 col-lg-1">
                 <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <div class="col-1">
+            <div class="col-2 col-lg-1">
                 <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
@@ -201,6 +210,7 @@
             <small>©Todos los derechos reservados</small>
         </div>
     </footer>
+
     <!-- Bootstrap 5.2.0 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -213,6 +223,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="./assets/js/fancy.js"></script>
     <script src="./assets/js/owl.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

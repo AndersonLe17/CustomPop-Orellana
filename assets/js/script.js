@@ -1,3 +1,4 @@
+AOS.init();
 let header = document.getElementById('header');
 
 let fondo = document.getElementById('fondo');
@@ -37,17 +38,3 @@ document.querySelector('.menu').onclick = function(){
     this.classList.toggle('active');
     navigation.classList.toggle('active');
 }
-
-$(document).on('mouseover', '.img-p', function (e) {
-    var img1 = $(this).children("img:first");
-    var img2 = $(this).children("img:last");
-    img1.attr('class', 'd-none');
-    img2.attr('class', 'd-block');
-});
-
-$(document).on('mouseleave ', '.img-p', function (e) {
-    var img1 = $(this).children("img:first");
-    var img2 = $(this).children("img:last");
-    img1.attr('class', 'd-block');
-    img2.attr('class', 'd-none');
-});
